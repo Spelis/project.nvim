@@ -3,6 +3,9 @@
 **project.nvim** is an all in one neovim plugin written in lua that provides
 superior project management.
 
+> [!NOTE]
+> This is a fork, original used deprecated functions and hadn't been updated in 2y
+
 ![Telescope Integration](https://user-images.githubusercontent.com/36672196/129409509-62340f10-4dd0-4c1a-9252-8bfedf2a9945.png)
 
 ## ⚡ Requirements
@@ -53,7 +56,7 @@ Install the plugin with your preferred package manager:
 
 ```vim
 " Vim Script
-Plug 'ahmedkhalf/project.nvim'
+Plug 'spelis/project.nvim'
 
 lua << EOF
   require("project_nvim").setup {
@@ -69,7 +72,7 @@ EOF
 ```lua
 -- Lua
 use {
-  "ahmedkhalf/project.nvim",
+  "spelis/project.nvim",
   config = function()
     require("project_nvim").setup {
       -- your configuration comes here
